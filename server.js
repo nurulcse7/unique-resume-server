@@ -7,13 +7,13 @@ const mongoose = require("mongoose");
 const cookieParser = require("cookie-parser");
 const userRoute = require("./routes/userRoute");
 
-// middlewere
+// middleware
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(cookieParser());
 
-// connect DB
+//connect DB
 
 mongoose.connect(
   process.env.DB_URL,
